@@ -26,3 +26,6 @@ PRODUCT_PACKAGES += \
 # Busybox
 PRODUCT_PACKAGES += \
     Busybox
+
+# Squisher Location
+SQUISHER_SCRIPT := vendor/velvet/tools/squisher
