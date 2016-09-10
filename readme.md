@@ -1,1 +1,1 @@
-PureNexus Project Vendor
+VelvetROM Vendor

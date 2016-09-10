@@ -1,4 +1,5 @@
 # Copyright (C) 2016 The Pure Nexus Project
+#               2016 The Velvet Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,21 +13,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include vendor/nexus/configs/aosp_fixes.mk
-include vendor/nexus/configs/bootanimation.mk
-include vendor/nexus/configs/nexus_main.mk
-include vendor/nexus/configs/system_additions.mk
-include vendor/nexus/configs/version.mk
+# Include overlays
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/velvet/overlay/common
 
-# Telephony packages
+# Main Required Packages
 PRODUCT_PACKAGES += \
-    Stk \
-    CellBroadcastReceiver
+    Launcher3 \
+    LiveWallpapersPicker
 
-# Allow tethering without provisioning app
-PRODUCT_PROPERTY_OVERRIDES += \
-    net.tethering.noprovisioning=true
-
-# Thank you, please drive thru!
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.dun.override=0
+# Busybox
+PRODUCT_PACKAGES += \
+    Busybox

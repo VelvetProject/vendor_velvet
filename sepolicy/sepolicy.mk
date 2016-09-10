@@ -1,7 +1,7 @@
 #
 # This policy configuration will be used by all products that
-# inherit from Pure Nexus
+# inherit from Velvet
 #
 
 BOARD_SEPOLICY_DIRS += \
-    vendor/nexus/sepolicy
+    vendor/velvet/sepolicy

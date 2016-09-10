@@ -1,4 +1,5 @@
 # Copyright (C) 2016 The Pure Nexus Project
+#               2016 The Velvet Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,21 +13,21 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Include Pure Nexus telephony configuration
-include vendor/nexus/configs/nexus_phone.mk
+include vendor/velvet/configs/aosp_fixes.mk
+include vendor/velvet/configs/bootanimation.mk
+include vendor/velvet/configs/velvet_main.mk
+include vendor/velvet/configs/system_additions.mk
+include vendor/velvet/configs/version.mk
 
-# Inherit AOSP device configuration for shamu.
-$(call inherit-product, device/moto/shamu/aosp_shamu.mk)
+# Telephony packages
+PRODUCT_PACKAGES += \
+    Stk \
+    CellBroadcastReceiver
 
-# Override AOSP build properties
-PRODUCT_NAME := nexus_shamu
-PRODUCT_BRAND := google
-PRODUCT_DEVICE := shamu
-PRODUCT_MODEL := Nexus 6
-PRODUCT_MANUFACTURER := motorola
+# Allow tethering without provisioning app
+PRODUCT_PROPERTY_OVERRIDES += \
+    net.tethering.noprovisioning=true
 
-# Device Fingerprint
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=shamu \
-    BUILD_FINGERPRINT=google/shamu/shamu:7.0/NRD90M/3085278:user/release-keys \
-    PRIVATE_BUILD_DESC="shamu-user 7.0 NRD90M 3085278 release-keys"
+# Thank you, please drive thru!
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.dun.override=0

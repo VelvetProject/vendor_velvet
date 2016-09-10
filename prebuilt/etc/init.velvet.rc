@@ -1,4 +1,4 @@
-# Pure Nexus Extras
+# Velvet Extras
 
 on post-fs-data
     # Run sysinit

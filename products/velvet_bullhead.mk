@@ -1,4 +1,5 @@
 # Copyright (C) 2016 The Pure Nexus Project
+#               2016 The Velvet Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,14 +13,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Include Pure Nexus telephony configuration
-include vendor/nexus/configs/nexus_phone.mk
+# Include Velvet telephony configuration
+include vendor/velvet/configs/velvet_phone.mk
 
 # Inherit AOSP device configuration for bullhead
 $(call inherit-product, device/lge/bullhead/aosp_bullhead.mk)
 
 # Override AOSP build properties
-PRODUCT_NAME := nexus_bullhead
+PRODUCT_NAME := velvet_bullhead
 PRODUCT_BRAND := google
 PRODUCT_DEVICE := bullhead
 PRODUCT_MODEL := Nexus 5X

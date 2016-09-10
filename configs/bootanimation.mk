@@ -1,4 +1,5 @@
 # Copyright (C) 2016 The Pure Nexus Project
+#               2016 The Velvet Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,15 +14,15 @@
 # limitations under the License.
 
 # Add Stock Lollipop bootanimation based on device
-ifneq ($(filter nexus_angler,$(TARGET_PRODUCT)),)
+ifneq ($(filter velvet_angler,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
-        vendor/nexus/prebuilt/bootanimation/angler.zip:system/media/bootanimation.zip
+        vendor/velvet/prebuilt/bootanimation/angler.zip:system/media/bootanimation.zip
 endif
-ifneq ($(filter nexus_bullhead,$(TARGET_PRODUCT)),)
+ifneq ($(filter velvet_bullhead,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
-        vendor/nexus/prebuilt/bootanimation/bullhead.zip:system/media/bootanimation.zip
+        vendor/velvet/prebuilt/bootanimation/bullhead.zip:system/media/bootanimation.zip
 endif
-ifneq ($(filter nexus_shamu,$(TARGET_PRODUCT)),)
+ifneq ($(filter velvet_shamu,$(TARGET_PRODUCT)),)
     PRODUCT_COPY_FILES += \
-        vendor/nexus/prebuilt/bootanimation/shamu.zip:system/media/bootanimation.zip
+        vendor/velvet/prebuilt/bootanimation/shamu.zip:system/media/bootanimation.zip
 endif

@@ -1,4 +1,5 @@
 # Copyright (C) 2016 The Pure Nexus Project
+#               2016 The Velvet Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,13 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-#pure nexus versioning
-ifndef PURENEXUS_BUILD_TYPE
-    PURENEXUS_BUILD_TYPE := HOMEMADE
-endif
-
-NEXUS_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d)-$(PURENEXUS_BUILD_TYPE)
+VELVET_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d)
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.purenexus.version=$(NEXUS_VERSION)
+    ro.velvet.version=$(VELVET_VERSION)
 

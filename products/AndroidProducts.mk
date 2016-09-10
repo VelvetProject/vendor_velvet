@@ -1,4 +1,5 @@
 # Copyright (C) 2016 The Pure Nexus Project
+#               2016 The Velvet Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,12 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ifeq (nexus_angler,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_angler.mk
-endif
-ifeq (nexus_bullhead,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_bullhead.mk
-endif
-ifeq (nexus_shamu,$(TARGET_PRODUCT))
-    PRODUCT_MAKEFILES += $(LOCAL_DIR)/nexus_shamu.mk
+ifeq (velvet_bullhead,$(TARGET_PRODUCT))
+    PRODUCT_MAKEFILES += $(LOCAL_DIR)/velvet_bullhead.mk
 endif
