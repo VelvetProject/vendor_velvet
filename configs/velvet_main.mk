@@ -20,7 +20,8 @@ PRODUCT_PACKAGE_OVERLAYS += \
 # Main Required Packages
 PRODUCT_PACKAGES += \
     Launcher3 \
-    LiveWallpapersPicker
+    LiveWallpapersPicker \
+    masquerade
 
 # Busybox
 PRODUCT_PACKAGES += \
