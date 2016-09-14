@@ -29,4 +29,7 @@ PRODUCT_COPY_FILES += \
 
 # Security Enhanced Linux
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.selinux=1
+    ro.build.selinux=1 \
+    ro.config.media_vol_steps=20
+
+
