@@ -31,3 +31,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Thank you, please drive thru!
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.dun.override=0
+
+# Messaging
+PRODUCT_PACKAGES += \
+	messaging
