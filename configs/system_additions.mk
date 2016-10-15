@@ -32,4 +32,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1 \
     ro.config.media_vol_steps=20
 
+#DU Utils Library
+PRODUCT_PACKAGES += \
+    org.dirtyunicorns.utils
 
+PRODUCT_BOOT_JARS += \
+    org.dirtyunicorns.utils
