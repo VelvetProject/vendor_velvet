@@ -29,3 +29,9 @@ PRODUCT_PACKAGES += \
 
 # Squisher Location
 SQUISHER_SCRIPT := vendor/velvet/tools/squisher
+
+# Export optimization flags
+O3_OPTS := true
+STRICT_ALIASING := false
+POLLY_OPTS := true
+GRAPHITE_OPTS := true
