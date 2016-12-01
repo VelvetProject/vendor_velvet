@@ -23,6 +23,10 @@ PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
     masquerade
 
+# Include explicitly to work around Facelock issues
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full
+
 # Busybox
 PRODUCT_PACKAGES += \
     Busybox
