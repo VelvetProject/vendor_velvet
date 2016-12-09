@@ -32,6 +32,6 @@ SQUISHER_SCRIPT := vendor/velvet/tools/squisher
 
 # Export optimization flags
 O3_OPTS := true
-STRICT_ALIASING := false
+STRICT_ALIASING := true
 POLLY_OPTS := true
 GRAPHITE_OPTS := true
