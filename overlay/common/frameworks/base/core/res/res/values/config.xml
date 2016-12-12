@@ -46,7 +46,6 @@
     <string-array translatable="false" name="config_globalActionsList">
         <item>power</item>
         <item>restart</item>
-        <item>airplane</item>
     </string-array>
 
     <!-- Hide Project Fi app unless it is being used -->
