@@ -38,7 +38,3 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     org.dirtyunicorns.utils
-
-# Arise fix
-PRODUCT_COPY_FILES +=  \
-    vendor/velvet/prebuilt/common/audio/audio_policy_configuration.xml:system/etc
