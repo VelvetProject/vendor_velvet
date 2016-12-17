@@ -27,9 +27,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Busybox
 
-# Squisher Location
-SQUISHER_SCRIPT := vendor/velvet/tools/squisher
-
 # Export optimization flags
 O3_OPTS := true
 STRICT_ALIASING := true
