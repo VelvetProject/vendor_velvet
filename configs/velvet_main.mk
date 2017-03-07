@@ -21,7 +21,7 @@ PRODUCT_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     Launcher3 \
     LiveWallpapersPicker \
-    masquerade
+    ThemeInterfacer
 
 # Include explicitly to work around Facelock issues
 PRODUCT_PACKAGES += \
